@@ -39,7 +39,12 @@ public class Main {
 			y += ydir;
 		}
 	
-		System.out.println(x +" "+y);
+		StringBuilder sb = new StringBuilder();
+		sb.append(x);
+		sb.append(" ");
+		sb.append(y);
+		// String + 연산은 매우 느리다. 
+		System.out.println(sb);
 		
 	}
 	
